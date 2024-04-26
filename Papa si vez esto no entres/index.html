@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Franqui Sandoval</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
@@ -13,15 +14,18 @@
             <h1 class="title">Bienvenido, soy Franqui</h1>
         </section>
         <nav class="nav">
-            <a href="#" class="nav_link">Inicio</a>
-            <a href="#" class="nav_link">Servicios</a>
-            <a href="#" class="nav_link">Contactanos</a>
+            <a href="#inicio" class="nav_link">Inicio</a>
+            <a href="#servicios" class="nav_link">Servicios</a>
+            <a href="#contacto" class="nav_link">Contactanos</a>
         </nav>
     </div>
+
+
+
     <header class="header">
         
         <div class="header-content container">
-            <div class="header-txt">
+            <div class="header-txt" id="inicio">
                 
                     <h1>Inicio</h1>
                 
@@ -72,7 +76,7 @@
     </header>
 
     <main class="services">
-        <div class="services-txt container">
+        <div class="services-txt container" id="servicios">
             <h2>Servicios</h2>
             <p>
                 A continuacion te mostrare algunos de los servicios que puedo ofrecerte como medico gineco-Obstetra.
@@ -163,9 +167,10 @@
         </div>
     </main>
 
-    <footer class="footer container">
+    <footer class="footer container"  id="contacto">
         <h2>Contactanos</h2>
-        <form action="https://formsubmit.co/slgabrielalejandro@gmail.com" method="POST">
+        <p>Puedes contactarme a traves de un correo electronico, o las siguientes redes sociales:</p>
+        <form action="https://formsubmit.co/smfranqui@gmail.com" method="POST">
             <div class="form-group">
                 <div>
                     <input type="text" placeholder="Nombre" name="name" class="campo">
@@ -174,12 +179,30 @@
                 </div>
                 <textarea name="message" cols="30" rows="2" placeholder="Mensaje" class="campo"></textarea> 
             </div>
-            <input type="submit" value="Enviar" class="btn-1">
-
+            <div class="btnEnviar">
+                <input type="submit" value="Enviar" class="btn-1">  
+            </div>
+            <div class="redesSociales">
+                <ul>
+                    <li class="instagram"><a href="https://www.instagram.com/drfsandoval/" class="ig"><i class="fa-brands fa-instagram icon1 icon"></i></a></li>
+                    <br><li class="twitter"><a href="https://twitter.com/" class="tw"><i class="fa-brands fa-twitter icon2 icon"></i></a></li>
+                    <br><li class="whatsapp"><a href="https://wa.me/04145908099" class="wh"><i class="fa-brands fa-whatsapp icon3 icon"></i></a></li>
+                    <br><li class="facebook"><a href="https://www.facebook.com/" class="fb"><i class="fa-brands fa-facebook icon4 icon"></i></a></li>
+                </ul>        
+            </div>
             <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
             <input type="hidden" name="_captcha" value="false">
         </form>
+        
+        <div>
+            <img src="Imagenes/E. Frase copia.png" alt="" class="frs">
+            <di>
+                <p style="font-size: 25px; position: absolute; transform: translate(330px, -5px);"><b><i>"La salud ginecológica es fundamental para una vida plena y feliz."</i></b></p>
+            </di>
+        </div>
+        
+
     </footer>
-    
+    <script src="script.js"></script>
 </body>
 </html>
